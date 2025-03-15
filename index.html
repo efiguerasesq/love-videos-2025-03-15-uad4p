@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +20,34 @@
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Love Videos</a>
+                <a href="https://efiguerasesq.github.io/love-videos-2025-03-15-uad4p" class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-all duration-300">Love Videos</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="hover:text-pink-500 transition-colors">Features</a>
-                    <a href="#benefits" class="hover:text-pink-500 transition-colors">Benefits</a>
-                    <a href="#video" class="hover:text-pink-500 transition-colors">Watch</a>
-                    <a href="#faq" class="hover:text-pink-500 transition-colors">FAQ</a>
+                    <a href="#features" class="hover:text-pink-500 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="hover:text-pink-500 transition-colors duration-300">Benefits</a>
+                    <a href="#video" class="hover:text-pink-500 transition-colors duration-300">Watch</a>
+                    <a href="#testimonials" class="hover:text-pink-500 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-pink-500 transition-colors duration-300">About</a>
+                    <a href="#faq" class="hover:text-pink-500 transition-colors duration-300">FAQ</a>
                 </div>
-                <a href="https://love.com" class="hidden md:block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full hover:scale-105 transition-transform">
+                <a href="https://love.com" class="hidden md:block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-pink-500/20">
                     Get Started
                 </a>
-                <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+                <button class="mobile-menu-button md:hidden text-2xl" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="hover:text-pink-500 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="hover:text-pink-500 transition-colors duration-300">Benefits</a>
+                    <a href="#video" class="hover:text-pink-500 transition-colors duration-300">Watch</a>
+                    <a href="#testimonials" class="hover:text-pink-500 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-pink-500 transition-colors duration-300">About</a>
+                    <a href="#faq" class="hover:text-pink-500 transition-colors duration-300">FAQ</a>
+                    <a href="https://love.com" class="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-center hover:scale-105 transition-transform duration-300">
+                        Get Started
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -30,16 +55,16 @@
     <main>
         <section id="hero" class="relative min-h-screen flex items-center">
             <div class="absolute inset-0 bg-[url('https://source.unsplash.com/random/1920x1080?love')] bg-cover bg-center opacity-25"></div>
-            <div class="absolute inset-0 bg-gray-900/75"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-900/75 to-purple-900/50"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-3xl">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Love Videos</h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-8">Love</p>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Share Your Love Story with the World</h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-8">Transform your precious moments into timeless memories with our innovative video platform designed specifically for love stories.</p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://love.com" class="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-center hover:scale-105 transition-transform">
-                            Get Started Now
+                        <a href="https://love.com" class="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-center hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                            Start Your Story Now
                         </a>
-                        <a href="#video" class="px-8 py-4 border border-pink-500 rounded-full text-center hover:bg-pink-500/10 transition-colors">
+                        <a href="#video" class="px-8 py-4 border border-pink-500 rounded-full text-center hover:bg-pink-500/10 transition-colors duration-300 hover:scale-105">
                             Watch Demo
                         </a>
                     </div>
@@ -49,17 +74,17 @@
 
         <section id="features" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features for Your Love Story</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102 hover:shadow-xl">
                         <i class="fas fa-heart text-3xl text-pink-500 mb-4"></i>
-                        <h3 class="text-xl font-bold mb-4">Love</h3>
-                        <p class="text-gray-400">Experience the power of love through our platform.</p>
+                        <h3 class="text-xl font-bold mb-4">Advanced Story Creation</h3>
+                        <p class="text-gray-400">Create stunning love story videos with our intuitive editor, featuring professional templates and emotional music tracks.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <i class="fas fa-heart text-3xl text-purple-500 mb-4"></i>
-                        <h3 class="text-xl font-bold mb-4">Love</h3>
-                        <p class="text-gray-400">Share the love with others around the world.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102 hover:shadow-xl">
+                        <i class="fas fa-share-alt text-3xl text-purple-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4">Global Sharing Platform</h3>
+                        <p class="text-gray-400">Share your love story with a worldwide community, connect with other couples, and inspire others with your journey.</p>
                     </div>
                 </div>
             </div>
@@ -67,31 +92,73 @@
 
         <section id="video" class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Watch Our Story</h2>
-                <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Watch How Love Stories Come to Life</h2>
+                <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl hover:shadow-pink-500/20 transition-shadow duration-300">
                     <div class="relative pb-[56.25%]">
                         <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                <p class="text-center text-gray-400 mt-8">Discover how our platform helps couples create and share their unique love stories</p>
             </div>
         </section>
 
         <section id="benefits" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefits</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Love Videos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <h3 class="text-xl font-bold mb-4">Love love love</h3>
-                        <p class="text-gray-400">Share more love with the world.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102 hover:shadow-xl">
+                        <h3 class="text-xl font-bold mb-4">Professional Quality</h3>
+                        <p class="text-gray-400">Create stunning videos with cinema-grade effects and transitions, no experience needed.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <h3 class="text-xl font-bold mb-4">Love love love</h3>
-                        <p class="text-gray-400">Experience deeper connections.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102 hover:shadow-xl">
+                        <h3 class="text-xl font-bold mb-4">Easy Sharing</h3>
+                        <p class="text-gray-400">Share your story across all social platforms with one click. Reach loved ones worldwide.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <h3 class="text-xl font-bold mb-4">Love love love</h3>
-                        <p class="text-gray-400">Build lasting relationships.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102 hover:shadow-xl">
+                        <h3 class="text-xl font-bold mb-4">Secure Storage</h3>
+                        <p class="text-gray-400">Your precious memories are safely stored in the cloud, accessible anytime, anywhere.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102">
+                        <div class="flex text-pink-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-400 mb-4">"Love Videos helped us create the perfect wedding video. The templates and music selection made it so easy to capture our special day beautifully."</p>
+                        <p class="font-bold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">Newlywed</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-102">
+                        <div class="flex text-pink-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-400 mb-4">"I created an anniversary surprise video for my partner in just one hour. The platform's intuitive design and professional effects made it look like it was made by a pro!"</p>
+                        <p class="font-bold">Michael Chen</p>
+                        <p class="text-sm text-gray-500">Creative Director</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Story</h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-gray-400">Founded in 2020, Love Videos emerged from a simple belief: every love story deserves to be told beautifully. Our platform combines cutting-edge technology with intuitive design to help couples worldwide create, preserve, and share their precious moments in ways that truly capture the essence of their unique relationships.</p>
                 </div>
             </div>
         </section>
@@ -100,13 +167,13 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-4">
-                    <div class="p-6 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <h3 class="text-xl font-bold mb-2">What is Love Videos?</h3>
-                        <p class="text-gray-400">A platform dedicated to sharing love through video content.</p>
+                    <div class="p-6 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-2">How does the video creation process work?</h3>
+                        <p class="text-gray-400">Our platform offers an intuitive drag-and-drop interface where you can upload your photos and videos, choose from premium templates, add music, and customize effects. The entire process typically takes less than 30 minutes.</p>
                     </div>
-                    <div class="p-6 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-colors">
-                        <h3 class="text-xl font-bold mb-2">How does it work?</h3>
-                        <p class="text-gray-400">Simply sign up and start sharing your love story with the world.</p>
+                    <div class="p-6 rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-2">What makes Love Videos different from other platforms?</h3>
+                        <p class="text-gray-400">We specialize exclusively in love stories, offering specialized templates, music, and effects designed specifically for romantic moments. Our platform also includes unique features like couple collaboration and private sharing options.</p>
                     </div>
                 </div>
             </div>
@@ -114,9 +181,9 @@
 
         <section class="py-24 bg-gradient-to-r from-pink-500 to-purple-500">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Share Your Love?</h2>
-                <a href="https://love.com" class="inline-block px-8 py-4 bg-white text-pink-500 rounded-full hover:scale-105 transition-transform">
-                    Get Started Now
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Create Your Love Story?</h2>
+                <a href="https://love.com" class="inline-block px-8 py-4 bg-white text-pink-500 rounded-full hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                    Start Creating Now
                 </a>
             </div>
         </section>
@@ -127,25 +194,26 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Love Videos</h3>
-                    <p class="text-gray-400">Share your love with the world.</p>
+                    <p class="text-gray-400">Creating timeless love stories through video.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <a href="mailto:gitpage.d0dmj@passmail.net" class="text-gray-400 hover:text-pink-500">gitpage.d0dmj@passmail.net</a>
+                    <a href="mailto:gitpage.d0dmj@passmail.net" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">gitpage.d0dmj@passmail.net</a>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-pink-500">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-pink-500">Terms of Service</a></li>
+                        <li><a href="https://efiguerasesq.github.io/love-videos-2025-03-15-uad4p/privacy.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://efiguerasesq.github.io/love-videos-2025-03-15-uad4p/terms.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://efiguerasesq.github.io/love-videos-2025-03-15-uad4p/blog.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -154,5 +222,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
